@@ -1,18 +1,21 @@
-package com.People.Model;
+package com.People.Domain;
 
 public class Person {
     private String email;
     private String password;
     private String role; //role can be student or senoir or guest ot Other
+    private String status;
 
 
     public Person() {
     }
 
-    public Person(String email, String password, String role) {
+    public Person(String email, String password, String role,String status) {
         this.email = email;
         this.password = password;
         this.role = role;
+        this.status=status;
+
     }
 
     public String getEmail() {
@@ -37,5 +40,13 @@ public class Person {
 
     public void setRole(String role) {
         this.role = role;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }
