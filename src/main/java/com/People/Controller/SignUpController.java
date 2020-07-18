@@ -5,14 +5,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 import javax.validation.Valid;
 
 @RestController
-@RequestMapping(value = "demo")
+@RequestMapping(value = "/demo")
 public class SignUpController {
 
     public SignUpController() {
-
     }
 
     @PostMapping("/new")
