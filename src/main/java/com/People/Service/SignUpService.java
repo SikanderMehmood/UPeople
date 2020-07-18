@@ -1,6 +1,6 @@
 package com.People.Service;
 
-import com.People.Domain.Person;
+import com.People.Domain.DomainPerson;
 import com.People.Repository.SignUpRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -15,7 +15,7 @@ public class SignUpService {
         this.signUpRepository = signUpRepository;
     }
 
-    public Person saveSignUpInformation(Person person) {
-        return  signUpRepository.save(person);
+    public DomainPerson saveSignUpInformation(DomainPerson domainPerson) {
+        return  signUpRepository.save(domainPerson);
     }
 }

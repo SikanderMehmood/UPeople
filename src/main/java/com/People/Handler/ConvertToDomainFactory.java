@@ -1,14 +1,15 @@
 package com.People.Handler;
 
-import com.People.Domain.Person;
+import com.People.Domain.DomainPerson;
+import com.People.Model.ModelPerson;
 import org.springframework.stereotype.Component;
 
 @Component
 public class ConvertToDomainFactory {
 
 
-    public Person convert(com.People.Model.Person person) {
+    public DomainPerson convert(ModelPerson modelPerson) {
 
-        return new Person(person.getEmail(),person.getPassword(),person.getRole(),"ONLINE");
+        return new DomainPerson(modelPerson.getEmail(), modelPerson.getPassword(), modelPerson.getRole(),"ONLINE");
     }
 }

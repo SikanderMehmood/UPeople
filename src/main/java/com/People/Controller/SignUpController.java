@@ -1,7 +1,7 @@
 package com.People.Controller;
 
 import com.People.Handler.SignUpHandler;
-import com.People.Model.Person;
+import com.People.Model.ModelPerson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -18,7 +18,7 @@ public class SignUpController {
     private SignUpHandler signUpHandler;
 
     @PostMapping("/new")
-    public String saveNewPerson(@Valid @RequestBody Person person) {
-         return  signUpHandler.saveSignUpInformation(person);
+    public String saveNewPerson(@Valid @RequestBody ModelPerson modelPerson) {
+         return  signUpHandler.saveSignUpInformation(modelPerson);
     }
 }

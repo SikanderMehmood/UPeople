@@ -1,16 +1,16 @@
 package com.People.Domain;
 
-public class Person {
+public class DomainPerson {
     private String email;
     private String password;
     private String role; //role can be student or senoir or guest ot Other
     private String status;
 
 
-    public Person() {
+    public DomainPerson() {
     }
 
-    public Person(String email, String password, String role,String status) {
+    public DomainPerson(String email, String password, String role, String status) {
         this.email = email;
         this.password = password;
         this.role = role;

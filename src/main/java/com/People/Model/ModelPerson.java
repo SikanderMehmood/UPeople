@@ -1,15 +1,15 @@
 package com.People.Model;
 
-public class Person {
+public class ModelPerson {
     private String email;
     private String password;
     private String role; //role can be student or senoir or guest ot Other
 
 
-    public Person() {
+    public ModelPerson() {
     }
 
-    public Person(String email, String password, String role) {
+    public ModelPerson(String email, String password, String role) {
         this.email = email;
         this.password = password;
         this.role = role;
