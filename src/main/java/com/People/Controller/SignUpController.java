@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 
 @RestController
-@RequestMapping(value = "/signup")
+@RequestMapping(value = "/log")
 public class SignUpController {
 
     @Autowired
