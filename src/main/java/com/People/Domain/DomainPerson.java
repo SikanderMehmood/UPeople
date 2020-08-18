@@ -10,7 +10,7 @@ public class DomainPerson {
     private boolean medical;
     private boolean engineering;
     private int fscMarks;
-    private String UniversityName;
+    private String universityName;
     private String role; //role can be student or senoir or guest ot Other
     private String status;
     private List<String> uniList;
@@ -23,7 +23,7 @@ public class DomainPerson {
         this.medical = medical;
         this.engineering = engineering;
         this.fscMarks = fscMarks;
-        UniversityName = universityName;
+        universityName = universityName;
         this.role = role;
         this.uniList=uniList;
         this.status = status;
@@ -86,11 +86,11 @@ public class DomainPerson {
     }
 
     public String getUniversityName() {
-        return UniversityName;
+        return universityName;
     }
 
     public void setUniversityName(String universityName) {
-        UniversityName = universityName;
+        universityName = universityName;
     }
 
     public String getRole() {

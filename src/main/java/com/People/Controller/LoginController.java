@@ -22,7 +22,7 @@ public class LoginController {
         return "Application status GREEN";
     }
 
-    @GetMapping(value = "/personLogin")
+    @PostMapping(value = "/personLogin")
     public PersonAuthenticatedModel getPerson(@RequestBody UserModel userModel) {
         return loginHandler.getPersonModelIfExist(userModel);
     }
